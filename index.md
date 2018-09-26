@@ -1,6 +1,6 @@
 ---
 title: Where Technology and Expertise Come Together
-layout: page
+layout: default
 ---
 
 ## Join Our Network
