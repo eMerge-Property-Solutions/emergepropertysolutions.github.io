@@ -4,9 +4,7 @@ title: Contact Us
 permalink: /contact/
 ---
 
-## Contact Us
-
-We look forward to hearing from you! 
+## We look forward to hearing from you! 
 
 - Phone: 817-440-4975
 - Email: info@eMergePropertySolutions.com
