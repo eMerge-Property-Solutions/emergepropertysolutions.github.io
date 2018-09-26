@@ -1,12 +1,11 @@
 ---
+title: Where Technology and Expertise Come Together
 layout: page
 ---
 
-## Where Technology and Expertise Come Together
+## Join Our Network
 
-### Join Our Network
-
-#### eMerge Is Going Live
+### eMerge Is Going Live
 
 A Partner You Can Rely on Day in, Day out. 
 
