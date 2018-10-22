@@ -1,0 +1,15 @@
+---
+layout: default
+title: News
+---
+
+{% assign sorted_news = site.news | sort: "date" %}
+{% for article in sorted_news %}
+{% capture n %}{{ n | plus: 1 }}{% endcapture %}
+<article>
+  <div class="eyebrow">{{ article.date | date: "%B %e, %Y" }}</div>
+  <h2><a href="{{ article.url }}">{{ article.title }}</a></h2>
+  {{ article.excerpt | markdownify }}
+  <hr />
+</article>
+{% endfor %}

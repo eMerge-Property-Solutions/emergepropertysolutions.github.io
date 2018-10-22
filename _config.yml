@@ -12,3 +12,12 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+
+# Collections
+collections:
+  team:
+    output: false
+  news:
+    output: true
+    permalink: /news/:title

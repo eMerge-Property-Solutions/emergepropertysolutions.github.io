@@ -1,0 +1,14 @@
+---
+layout: default
+title: Team
+---
+
+{% assign sorted_team = site.team | sort:"order" %}
+{% for member in sorted_team %}
+{% capture n %}{{ n | plus: 1 }}{% endcapture %}
+<div>
+  <h2>{{ member.name }}</h2>
+  <h3>{{ member.title }}</h3>
+  {{ member.content | markdownify }}
+</div>
+{% endfor %}
