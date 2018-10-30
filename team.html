@@ -1,14 +1,21 @@
 ---
 layout: default
+wide: true
 title: Team
+permalink: '/team/'
 ---
 
 {% assign sorted_team = site.team | sort:"order" %}
 {% for member in sorted_team %}
 {% capture n %}{{ n | plus: 1 }}{% endcapture %}
 <div>
+  <img src="{{ member.photo }}" width="200" height="200" alt="{{ member.name }} &ndash; {{ member.title }}" title="{{ member.name }} &ndash; {{ member.title }}" />
   <h2>{{ member.name }}</h2>
   <h3>{{ member.title }}</h3>
+
+  <div class="bio">
   {{ member.content | markdownify }}
+  </div>
+
 </div>
 {% endfor %}

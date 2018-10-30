@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Contact Us
-permalink: /contact/
+show_contact: false
+permalink: '/contact/'
 ---
 
 ## We look forward to hearing from you! 

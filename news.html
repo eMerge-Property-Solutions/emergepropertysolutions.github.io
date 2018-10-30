@@ -1,17 +1,20 @@
 ---
-layout: default
+layout: view
+wide: true
 title: News
 permalink: '/news/'
 pagination:
   enabled: true
-  collection: 'news'
-  sort_field: 'date'
-  sort_reverse: true
   permalink: '/:num/'
   title: 'News'
+  collection: 'news'
+  per_page: 10
+  limit: 6
+  sort_field: 'date'
+  sort_reverse: true
 ---
+
 {% for article in paginator.posts %}
-{% capture n %}{{ n | plus: 1 }}{% endcapture %}
 <article>
   <div class="eyebrow">{{ article.date | date: "%B %e, %Y" }}</div>
   <h2><a href="{{ article.url }}">{{ article.title }}</a></h2>

@@ -1,36 +1,37 @@
-<form action="https://submit.jotform.us/submit/82991071884165/" method="post" accept-charset="utf-8">
+<form class="contact-form" action="https://submit.jotform.us/submit/82991071884165/" method="post" accept-charset="utf-8">
+
   <input type="hidden" name="formID" value="82991071884165">
   <input type="hidden" name="event_id" value="1540622214546_82991071884165_fvbkA0T">
   <input type="hidden" id="simple_spc" name="simple_spc" value="82991071884165-82991071884165">
   <input type="hidden" name="website" value="">
 
-  <div>
-    <label for="first_name">First Name</label>
-    <input type="text" id="first_name" name="q3_firstName" data-type="input-textbox" size="20" value="" data-component="textbox" required>
+  <div class="required">
+    <label for="first-name">First Name</label>
+    <input type="text" id="first-name" name="q3_firstName" data-type="input-textbox" value="" data-component="textbox" required>
+  </div>
+
+  <div class="required">
+    <label for="last-name">Last Name</label>
+    <input type="text" id="last-name" name="q4_lastName" data-type="input-textbox" value="" data-component="textbox" required>
+  </div>
+
+  <div class="required">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="q6_email" value="" data-component="email" required>
   </div>
 
   <div>
-    <label id="label_4" for="last_name">Last Name</label>
-    <input type="text" id="last_name" name="q4_lastName" data-type="input-textbox" size="20" value="" data-component="textbox" required>
+  <label for="company">Company</label>
+  <input type="text" id="company" name="q5_company" data-type="input-textbox" value="" data-component="textbox">
   </div>
 
   <div>
-    <label id="label_6" for="email">Email</label>
-    <input type="email" id="email" name="q6_email" size="30" value="" data-component="email" required>
+    <label for="message">Message</label>
+    <textarea id="message" name="q7_message" data-component="textarea"></textarea>
   </div>
 
   <div>
-  <label id="label_5" for="company">Company</label>
-  <input type="text" id="company" name="q5_company" data-type="input-textbox" size="20" value="" data-component="textbox">
-  </div>
-
-  <div>
-    <label id="label_7" for="message">Message</label>
-    <textarea id="message" name="q7_message" cols="40" rows="6" data-component="textarea"></textarea>
-  </div>
-
-  <div>
-    <button id="submit" data-component="button">Submit</button>
+    <button data-component="button" class="btn btn-primary">Submit to eMerge</button>
   </div>
 
 </form>

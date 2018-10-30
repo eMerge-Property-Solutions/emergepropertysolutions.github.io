@@ -3,18 +3,40 @@
 
 {% include head.html %}
 
-<body>
+<body class="layout-default">
 
 {% include header.html %}
 
-<div class="container">
+{% if page.show_title != false %}
+<header>
+  <div class="container">
+    <div class="row align-content-center justify-content-center">
+      <h1 class="col text-center">{{ page.title }}</h1>
+    </div>
+  </div>
+</header>
+{% endif %}
 
-  <h1>{{ page.title }}</h1>
+<article>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="{% if page.wide == true %}col-12{% else %}col-sm-12 col-md-12 col-lg-9 col-xl-9{% endif %}">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+</article>
 
-  {{ content }}
-</div>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        {% include footer.html %}
+      </div>
+    </div>
+  </div>
+</footer>
 
-{% include footer.html %}
 
 </body>
 </html>

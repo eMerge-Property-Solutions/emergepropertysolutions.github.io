@@ -5,9 +5,11 @@ description: >-
 baseurl: ""
 url: "http://emergepropertysolutions.com"
 twitter_username: emergepropsol
-linkedin_username: eMergepropertysolutions
+linkedin_username: emergepropertysolutions
 
 # Build settings
+exclude: [_lib]
+timezone: America/Chicago
 markdown: kramdown
 theme: minima
 plugins:
@@ -20,9 +22,11 @@ collections:
     output: false
   news:
     output: true
-    permalink: /news/:title
+    permalink: /news/:title/
 
 pagination:
+  enabled: true
+  debug: false
   trail:
     before: 2
     after: 2

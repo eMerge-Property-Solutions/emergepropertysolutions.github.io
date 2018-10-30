@@ -17,23 +17,64 @@
 </head>
 
 
-<body>
+<body class="layout-default">
 
-<div>
-  <ul>
-  <li><a href="/products">Products</a></li>
-  <li><a href="/team">Team</a></li>
-  <li><a href="/news">News</a></li>
-  <li><a href="/contact">Contact</a></li>
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" title="eMerge Property Solutions" href="/">
+    <img src="https://via.placeholder.com/200x100" width="60" height="30" alt="eMerge Property Solutions">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+    <ul class="primary-navigation navbar-nav mr-auto">
+  <li class="nav-item ">
+    <a class="nav-link" href="/products">Products</a>
+  </li>
+  <li class="nav-item ">
+    <a class="nav-link" href="/team">Team</a>
+  </li>
+  <li class="nav-item ">
+    <a class="nav-link" href="/news">News</a>
+  </li>
+  <li class="nav-item active">
+    <a class="nav-link" href="/contact">Contact</a>
+  </li>
 </ul>
-</div>
+
+    <ul class="secondary-navigation navbar-nav">
+  <li class="nav-item">
+    <a class="nav-link" href="#">Join Our Network</a>
+  </li>
+  <li class="nav-item">
+    <a class="btn btn-secondary" href="#">Analytics Login</a>
+  </li>
+  <li class="nav-item">
+    <a class="btn btn-primary" href="#">Login</a>
+  </li>
+</ul>
 
 
-<div class="container">
+  </div>
+</nav>
 
-  <h1>Contact Us</h1>
 
-  <h2 id="we-look-forward-to-hearing-from-you">We look forward to hearing from you!</h2>
+<header>
+  <div class="container">
+    <div class="row align-content-center justify-content-center">
+      <h1 class="col text-center">Contact Us</h1>
+    </div>
+  </div>
+</header>
+
+
+<article>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-12 col-lg-9 col-xl-9">
+        <h2 id="we-look-forward-to-hearing-from-you">We look forward to hearing from you!</h2>
 
 <ul>
   <li>Phone: 817-440-4975</li>
@@ -41,47 +82,89 @@
   <li>Address: 8325 Whitley Road Suite 200, Watauga, TX 76148</li>
 </ul>
 
-<form action="https://submit.jotform.us/submit/82991071884165/" method="post" accept-charset="utf-8">
+<form class="contact-form" action="https://submit.jotform.us/submit/82991071884165/" method="post" accept-charset="utf-8">
+
   <input type="hidden" name="formID" value="82991071884165" />
   <input type="hidden" name="event_id" value="1540622214546_82991071884165_fvbkA0T" />
   <input type="hidden" id="simple_spc" name="simple_spc" value="82991071884165-82991071884165" />
   <input type="hidden" name="website" value="" />
 
-  <div>
-    <label for="first_name">First Name</label>
-    <input type="text" id="first_name" name="q3_firstName" data-type="input-textbox" size="20" value="" data-component="textbox" required="" />
+  <div class="required">
+    <label for="first-name">First Name</label>
+    <input type="text" id="first-name" name="q3_firstName" data-type="input-textbox" value="" data-component="textbox" required="" />
+  </div>
+
+  <div class="required">
+    <label for="last-name">Last Name</label>
+    <input type="text" id="last-name" name="q4_lastName" data-type="input-textbox" value="" data-component="textbox" required="" />
+  </div>
+
+  <div class="required">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="q6_email" value="" data-component="email" required="" />
   </div>
 
   <div>
-    <label id="label_4" for="last_name">Last Name</label>
-    <input type="text" id="last_name" name="q4_lastName" data-type="input-textbox" size="20" value="" data-component="textbox" required="" />
+  <label for="company">Company</label>
+  <input type="text" id="company" name="q5_company" data-type="input-textbox" value="" data-component="textbox" />
   </div>
 
   <div>
-    <label id="label_6" for="email">Email</label>
-    <input type="email" id="email" name="q6_email" size="30" value="" data-component="email" required="" />
+    <label for="message">Message</label>
+    <textarea id="message" name="q7_message" data-component="textarea"></textarea>
   </div>
 
   <div>
-  <label id="label_5" for="company">Company</label>
-  <input type="text" id="company" name="q5_company" data-type="input-textbox" size="20" value="" data-component="textbox" />
-  </div>
-
-  <div>
-    <label id="label_7" for="message">Message</label>
-    <textarea id="message" name="q7_message" cols="40" rows="6" data-component="textarea"></textarea>
-  </div>
-
-  <div>
-    <button id="submit" data-component="button">Submit</button>
+    <button data-component="button" class="btn btn-primary">Submit to eMerge</button>
   </div>
 
 </form>
 
 
+      </div>
+    </div>
+  </div>
+</article>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        
+
+<div class="contact-details">
+  <div class="phone">Phone: 817-440-4975</div>
+  <div class="email">Email: <a href="mailto:info@eMergePropertySolutions.com">info@eMergePropertySolutions.com</a></div>
+  <div class="address">8325 Whitley Road Suite 200, Watauga, TX 76148</div>
 </div>
 
-<div>Footer</div>
+<ul class="primary-navigation navbar-nav mr-auto">
+  <li class="nav-item ">
+    <a class="nav-link" href="/products">Products</a>
+  </li>
+  <li class="nav-item ">
+    <a class="nav-link" href="/team">Team</a>
+  </li>
+  <li class="nav-item ">
+    <a class="nav-link" href="/news">News</a>
+  </li>
+  <li class="nav-item active">
+    <a class="nav-link" href="/contact">Contact</a>
+  </li>
+</ul>
+
+<ul class="social-links">
+  <li><a href="http://linkedin.com/company/emergepropertysolutions" class="linkedin" title="Follow Us on LinkedIn" target="_blank">LinkedIn</a></li>
+  <li><a href="http://twitter.com/emergepropsol" class="twitter" title="Follow Us on Twitter" target="_blank">Twitter</a></li>
+</ul>
+
+
+<div class="copyright">&copy; 2018 by eMerge Property Solutions.</div>
+
+      </div>
+    </div>
+  </div>
+</footer>
 
 
 </body>
