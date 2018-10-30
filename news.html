@@ -1,9 +1,16 @@
 ---
 layout: default
 title: News
+permalink: '/news/'
+pagination:
+  enabled: true
+  collection: 'news'
+  sort_field: 'date'
+  sort_reverse: true
+  permalink: '/:num/'
+  title: 'News'
 ---
-{% assign news = site.news | sort: "date" | reverse %}
-{% for article in news limit:6 %}
+{% for article in paginator.posts %}
 {% capture n %}{{ n | plus: 1 }}{% endcapture %}
 <article>
   <div class="eyebrow">{{ article.date | date: "%B %e, %Y" }}</div>
@@ -12,3 +19,11 @@ title: News
   <hr />
 </article>
 {% endfor %}
+
+{% if paginator.page_trail %}
+{% for trail in paginator.page_trail %}
+<li {% if page.url == trail.path %}class="selected"{% endif %}>
+  <a href="{{ trail.path }}" title="{{ trail.title }}">{{ trail.num }}</a>
+</li>
+{% endfor %}
+{% endif %}
