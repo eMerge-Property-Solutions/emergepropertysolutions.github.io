@@ -9,7 +9,7 @@ layout: none
     "eyebrow":"{{ article.date | date: "%B %e, %Y"}}",
     "url":"{{ article.url }}",
     "title":"{{ article.title }}",
-    "excerpt":"{{ article.excerpt | markdownify }}",
+    "excerpt":"{{ article.excerpt | markdownify | strip_newlines }}",
   {% raw %}},{% endraw %}
 {% endfor %}
 ]
