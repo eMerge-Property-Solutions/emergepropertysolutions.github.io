@@ -1,5 +1,4 @@
-{% raw %}
-{
+{% raw %}{{% endraw %}
 {% assign sorted_news = site.news | sort: "date" %}
 {% for article in sorted_news %}
 {% capture n %}{{ n | plus: 1 }}{% endcapture %}
@@ -10,5 +9,4 @@
 "excerpt":{{ article.excerpt | markdownify | prepend: '"' | append: '"' }}
 
 {% endfor %}
-}
-{% endraw %}
+{% raw %}}{% endraw %}
