@@ -2,7 +2,7 @@
 layout: default
 title: News
 ---
-{% assign sorted_news = paginator.posts | sort: "date" %}
+{% assign sorted_news = site.news | sort: "date" %}
 {% for article in sorted_news %}
 {% capture n %}{{ n | plus: 1 }}{% endcapture %}
 <article>
