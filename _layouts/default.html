@@ -8,11 +8,9 @@
 {% include header.html %}
 
 {% if page.show_title != false %}
-<header>
+<header class="jumbotron jumbotron-fluid">
   <div class="container">
-    <div class="row align-content-center justify-content-center">
-      <h1 class="col text-center">{{ page.title }}</h1>
-    </div>
+    <h1 class="display-4 text-center">{{ page.title }}</h1>
   </div>
 </header>
 {% endif %}

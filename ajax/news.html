@@ -1,13 +1,13 @@
 ---
-layout: none
 permalink: '/ajax/news/'
 pagination:
   enabled: true
   collection: 'news'
+  per_page: 3
   sort_field: 'date'
   sort_reverse: true
   permalink: '/:num/'
-  extension: 'html'
+  extension: 'json'
   trail:
     before: 0
     after: 0
@@ -15,7 +15,6 @@ pagination:
 {
   "posts": [
   {% for article in paginator.posts %}
-  {% capture n %}{{ n | plus: 1 }}{% endcapture %}
     {% raw %}{{% endraw %}
       "eyebrow": "{{ article.date | date: "%B %e, %Y"}}",
       "url": "{{ article.url }}",
