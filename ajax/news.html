@@ -9,7 +9,7 @@ layout: none
 "eyebrow":{{ article.date | date: "%B %e, %Y" | prepend: '"' | append: '"' }}
 "url":{{ article.url | prepend: '"' | append: '"' }}
 "title":{{ article.title | prepend: '"' | append: '"' }}
-"excerpt":{{ article.excerpt | markdownify | prepend: '"' | append: '"' }}
+"excerpt":{{ article.excerpt | strip_tags | prepend: '"' | append: '"' }}
 
 {% endfor %}
 {% raw %}}{% endraw %}
