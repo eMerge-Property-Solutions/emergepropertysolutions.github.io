@@ -17,9 +17,9 @@
 </head>
 
 
-<body class="layout-default">
+<body class="layout-default show-contact">
 
-<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+<nav class="navbar sticky-top navbar-expand-md">
   <a class="navbar-brand" title="eMerge Property Solutions" href="/">
     <img src="https://via.placeholder.com/200x100" width="60" height="30" alt="eMerge Property Solutions">
   </a>
@@ -51,7 +51,7 @@
     <a class="nav-link" href="#">Join Our Network</a>
   </li>
   <li class="nav-item">
-    <a class="btn btn-secondary" href="#">Analytics Login</a>
+    <a class="btn btn-outline-primary" href="#">Analytics Login</a>
   </li>
   <li class="nav-item">
     <a class="btn btn-primary" href="#">Login</a>
@@ -64,17 +64,18 @@
 
 
 <header class="jumbotron jumbotron-fluid">
-  <div class="container">
+  <div class="container align-self-center">
     <h1 class="display-4 text-center">Team</h1>
   </div>
 </header>
 
 
-<article>
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12">
-        
+<div class="main-content">
+  <article>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          
 
 
 <div>
@@ -103,52 +104,60 @@
 </div>
 
 
+        </div>
       </div>
     </div>
-  </div>
-</article>
+  </article>
+</div>
 
 <footer>
   <div class="container">
     <div class="row">
       <div class="col-12">
         
-<div class="contact-form">
+<div class="contact">
   <h2>Ready to get started? Contact Us.</h2>
-  <form class="contact-form" action="https://submit.jotform.us/submit/82991071884165/" method="post" accept-charset="utf-8">
+  <form class="contact-form container-fluid" action="https://submit.jotform.us/submit/82991071884165/" method="post" accept-charset="utf-8">
 
   <input type="hidden" name="formID" value="82991071884165">
   <input type="hidden" name="event_id" value="1540622214546_82991071884165_fvbkA0T">
   <input type="hidden" id="simple_spc" name="simple_spc" value="82991071884165-82991071884165">
   <input type="hidden" name="website" value="">
 
-  <div class="required">
-    <label for="first-name">First Name</label>
-    <input type="text" id="first-name" name="q3_firstName" data-type="input-textbox" value="" data-component="textbox" required>
+  <div class="row">
+    <div class="col-lg-6 col-md-12 form-field required">
+      <label for="first-name">First Name</label>
+      <input type="text" id="first-name" name="q3_firstName" data-type="input-textbox" value="" data-component="textbox" required>
+    </div>
+    <div class="col-lg-6 col-md-12 form-field required">
+      <label for="last-name">Last Name</label>
+      <input type="text" id="last-name" name="q4_lastName" data-type="input-textbox" value="" data-component="textbox" required>
+    </div>
   </div>
 
-  <div class="required">
-    <label for="last-name">Last Name</label>
-    <input type="text" id="last-name" name="q4_lastName" data-type="input-textbox" value="" data-component="textbox" required>
+  <div class="row">
+    <div class="col-lg-6 col-md-12 form-field required">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="q6_email" value="" data-component="email" required>
+    </div>
+
+    <div class="col-lg-6 col-md-12 form-field">
+      <label for="company">Company</label>
+      <input type="text" id="company" name="q5_company" data-type="input-textbox" value="" data-component="textbox">
+    </div>
   </div>
 
-  <div class="required">
-    <label for="email">Email</label>
-    <input type="email" id="email" name="q6_email" value="" data-component="email" required>
+  <div class="row">
+    <div class="col-12 form-field">
+      <label for="message">Message</label>
+      <textarea id="message" name="q7_message" data-component="textarea"></textarea>
+    </div>
   </div>
 
-  <div>
-  <label for="company">Company</label>
-  <input type="text" id="company" name="q5_company" data-type="input-textbox" value="" data-component="textbox">
-  </div>
-
-  <div>
-    <label for="message">Message</label>
-    <textarea id="message" name="q7_message" data-component="textarea"></textarea>
-  </div>
-
-  <div>
-    <button data-component="button" class="btn btn-primary">Submit to eMerge</button>
+  <div class="row">
+    <div class="col-12 text-center form-field">
+      <button data-component="button" class="btn btn-primary">Submit to eMerge</button>
+    </div>
   </div>
 
 </form>
@@ -156,13 +165,14 @@
 </div>
 
 
-<div class="contact-details">
-  <div class="phone">Phone: 817-440-4975</div>
-  <div class="email">Email: <a href="mailto:info@eMergePropertySolutions.com">info@eMergePropertySolutions.com</a></div>
-  <div class="address">8325 Whitley Road Suite 200, Watauga, TX 76148</div>
-</div>
+<div class="details">
+  <div class="contact-info">
+    <div class="phone">Phone: 817-440-4975</div>
+    <div class="email">Email: <a href="mailto:info@eMergePropertySolutions.com">info@eMergePropertySolutions.com</a></div>
+    <div class="address">8325 Whitley Road Suite 200, Watauga, TX 76148</div>
+  </div>
 
-
+  
 
 <ul class="primary-navigation navbar-nav mr-auto">
   <li class="nav-item ">
@@ -179,14 +189,14 @@
   </li>
 </ul>
 
-<ul class="social-links">
+  <ul class="social-links">
   <li><a href="http://linkedin.com/company/emergepropertysolutions" class="linkedin" title="Follow Us on LinkedIn" target="_blank">LinkedIn</a></li>
   <li><a href="http://twitter.com/emergepropsol" class="twitter" title="Follow Us on Twitter" target="_blank">Twitter</a></li>
 </ul>
 
 
-<div class="copyright">&copy; 2018 by eMerge Property Solutions.</div>
-
+  <div class="copyright">&copy; 2018 by eMerge Property Solutions.</div>
+</div>
       </div>
     </div>
   </div>

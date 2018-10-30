@@ -3,7 +3,7 @@
 
 {% include head.html %}
 
-<body class="layout-default">
+<body class="layout-view {% if page.show_contact != false %}show-contact{% endif %}">
 
 {% include header.html %}
 
@@ -15,10 +15,12 @@
 </header>
 {% endif %}
 
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="{% if page.wide == true %}col-12{% else %}col-sm-12 col-md-12 col-lg-9 col-xl-8{% endif %}">
-      {{ content }}
+<div class="main-content">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="{% if page.wide == true %}col-12{% else %}col-sm-12 col-md-12 col-lg-9 col-xl-8{% endif %}">
+        {{ content }}
+      </div>
     </div>
   </div>
 </div>

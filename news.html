@@ -19,14 +19,21 @@ pagination:
 
 {% for article in paginator.posts %}
 {% assign mod = forloop.index | modulo: 3 %}
-{% if mod == 1 %}<div class="row">{% endif %}
+{% if mod == 1 %}<div class="row pb-3 mb-3">{% endif %}
 
-<article class="col-4">
-  <div class="eyebrow">{{ article.date | date: "%B %e, %Y" }}</div>
-  <h2><a href="{{ article.url }}">{{ article.title }}</a></h2>
-  {{ article.excerpt | markdownify }}
-  <hr />
-</article>
+<div class="col-lg-4 col-md-12 card-group">
+
+  <article class="card" onclick="window.location='{{ article.url }}'">
+    <img class="card-img-top" src="https://via.placeholder.com/382x255" alt="Card image cap">
+    <div class="card-body">
+      <div class="eyebrow">{{ article.date | date: "%B %e, %Y" }}</div>
+      <h2 class="card-title">{{ article.title }}</h2>
+      <div class="card-text">{{ article.excerpt | markdownify }}</div>
+      <!--<a href="{{ article.url }}" class="btn btn-primary">Go somewhere</a>-->
+    </div>
+  </article>
+
+</div>
 
 {% if mod == 0 or forloop.index == paginator.posts.size %}</div>{% endif %}
 {% endfor %}

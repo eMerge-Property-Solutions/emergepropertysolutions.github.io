@@ -1,0 +1,25 @@
+.btn {
+  border-radius: 100px;
+}
+
+input,
+textarea {
+  border: 2px solid #e8eaed;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  &:focus {
+    border-color: #ccc;
+  }
+}
+
+form {
+  label {
+    cursor: pointer;
+  }
+  .required {
+    label:after {
+      content: ' (required)';
+    }
+  }
+}

@@ -1,0 +1,35 @@
+body.show-contact {
+  footer {
+    margin-top: 220px;
+    .contact {
+      margin-top: -220px;
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+      form.contact-form {
+        padding: 50px 75px;
+      }
+      h2 {
+        @extend .text-center;
+        background-color: $primary;
+        color: #fff;
+        line-height: 83px;
+      }
+    }
+  }
+}
+
+form.contact-form {
+  label {
+    display: block;
+  }
+  .form-field {
+    margin: 0 0 2rem 0;
+    textarea,
+    input {
+      display: block;
+      width: 100%;
+    }
+  }
+}

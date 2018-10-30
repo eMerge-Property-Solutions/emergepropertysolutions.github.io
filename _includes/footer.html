@@ -1,18 +1,20 @@
 {% if page.show_contact != false %}
-<div class="contact-form">
+<div class="contact">
   <h2>Ready to get started? Contact Us.</h2>
   {% include contact-form.html %}
 </div>
 {% endif %}
 
-<div class="contact-details">
-  <div class="phone">Phone: 817-440-4975</div>
-  <div class="email">Email: <a href="mailto:info@eMergePropertySolutions.com">info@eMergePropertySolutions.com</a></div>
-  <div class="address">8325 Whitley Road Suite 200, Watauga, TX 76148</div>
+<div class="details">
+  <div class="contact-info">
+    <div class="phone">Phone: 817-440-4975</div>
+    <div class="email">Email: <a href="mailto:info@eMergePropertySolutions.com">info@eMergePropertySolutions.com</a></div>
+    <div class="address">8325 Whitley Road Suite 200, Watauga, TX 76148</div>
+  </div>
+
+  {% include primary-navigation.html %}
+
+  {% include social-links.html %}
+
+  <div class="copyright">&copy; {{ site.time | date: '%Y' }} by eMerge Property Solutions.</div>
 </div>
-
-{% include primary-navigation.html %}
-
-{% include social-links.html %}
-
-<div class="copyright">&copy; {{ site.time | date: '%Y' }} by eMerge Property Solutions.</div>
