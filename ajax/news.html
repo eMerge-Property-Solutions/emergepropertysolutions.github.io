@@ -3,10 +3,10 @@
 {% for article in sorted_news %}
 {% capture n %}{{ n | plus: 1 }}{% endcapture %}
   {% raw %}{{% endraw %}
-  "eyebrow":"{{ article.date | date: "%B %e, %Y"}}",
-  "url":"{{ article.url }}",
-  "title":"{{ article.title }}",
-  "excerpt":"{{ article.excerpt | markdownify }}",
+    "eyebrow":"{{ article.date | date: "%B %e, %Y"}}",
+    "url":"{{ article.url }}",
+    "title":"{{ article.title }}",
+    "excerpt":"{{ article.excerpt | markdownify }}",
   {% raw %}},{% endraw %}
 {% endfor %}
 ]
