@@ -1,20 +1,39 @@
+{% assign active_trail = page.url | remove_first: "/" | split: "/" | first %}
+
 {% if page.show_contact != false %}
 <div class="contact">
-  <h2>Ready to get started? Contact Us.</h2>
+  <h2>Ready to get started? <strong>Contact Us.</strong></h2>
   {% include contact-form.html %}
 </div>
 {% endif %}
 
-<div class="details">
-  <div class="contact-info">
-    <div class="phone">Phone: 817-440-4975</div>
-    <div class="email">Email: <a href="mailto:info@eMergePropertySolutions.com">info@eMergePropertySolutions.com</a></div>
+<div class="details pt-5 pb-5">
+  <div class="contact-info text-center">
+    <div class="phone"><strong>Phone:</strong> 817-440-4975</div>
+    <div class="email"><strong>Email:</strong> <a href="mailto:info@eMergePropertySolutions.com">info@eMergePropertySolutions.com</a></div>
     <div class="address">8325 Whitley Road Suite 200, Watauga, TX 76148</div>
   </div>
 
-  {% include primary-navigation.html %}
+  <div class="text-center">
+    <ul class="primary-navigation">
+      <li class="{% if active_trail == "products" %}active{% endif %}">
+        <a href="/products">Products</a>
+      </li>
+      <li class="{% if active_trail == "team" %}active{% endif %}">
+        <a href="/team">Team</a>
+      </li>
+      <li class="{% if active_trail == "news" %}active{% endif %}">
+        <a href="/news">News</a>
+      </li>
+      <li class="{% if active_trail == "contact" %}active{% endif %}">
+        <a href="/contact">Contact</a>
+      </li>
+    </ul>
+  </div>
 
+  <div class="text-center">
   {% include social-links.html %}
+  </div>
 
-  <div class="copyright">&copy; {{ site.time | date: '%Y' }} by eMerge Property Solutions.</div>
+  <div class="copyright text-center">&copy; {{ site.time | date: '%Y' }} by eMerge Property Solutions.</div>
 </div>

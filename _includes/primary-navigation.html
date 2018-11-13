@@ -1,6 +1,6 @@
 {% assign active_trail = page.url | remove_first: "/" | split: "/" | first %}
 
-<ul class="primary-navigation navbar-nav mr-auto">
+<ul class="primary-navigation navbar-nav">
   <li class="nav-item {% if active_trail == "products" %}active{% endif %}">
     <a class="nav-link" href="/products">Products</a>
   </li>

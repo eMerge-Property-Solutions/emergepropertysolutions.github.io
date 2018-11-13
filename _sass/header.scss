@@ -1,10 +1,31 @@
 header {
   &.jumbotron {
-    background-color: $primary;
+    background-image: linear-gradient(to bottom, $primary 0%, lighten($primary, 25%) 100%);
     color: #fff;
     margin: 0;
     padding: 0;
-    h1 {
+    position: relative;
+    &:after {
+      content: ' ';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: rgba($primary, 1);
+      background-image: url(/img/header/header-dallas-tx-skyline.jpg);
+      background-size: cover;
+      background-position: center bottom;
+      background-blend-mode: overlay;
+      background-attachment: fixed;
+      opacity: .5;
+    }
+    & > * {
+      position: relative;
+      z-index: 99;
+    }
+    h1.display-4 {
       line-height: 234px;
       margin: 0;
     }

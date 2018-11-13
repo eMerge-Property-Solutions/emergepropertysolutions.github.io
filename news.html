@@ -19,7 +19,7 @@ pagination:
 
 {% for article in paginator.posts %}
 {% assign mod = forloop.index | modulo: 3 %}
-{% if mod == 1 %}<div class="row pb-3 mb-3">{% endif %}
+{% if mod == 1 %}<div class="row">{% endif %}
 
 <div class="col-lg-4 col-md-12 card-group">
 

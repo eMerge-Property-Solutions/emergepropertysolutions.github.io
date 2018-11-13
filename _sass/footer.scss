@@ -1,4 +1,33 @@
 footer {
   background: #221f25;
   color: #9fa0a2;
+  .phone,
+  .email {
+    display: inline;
+  }
+  .address {
+    display: block;
+  }
+  .primary-navigation {
+    display: inline-block;
+    list-style: none;
+    border-top: 1px solid #9e9fa1;
+    padding: 50px 0;
+    margin: 50px 0 0 0;
+    li {
+      display: inline-block;
+      padding: 0 16px;
+      a:link,
+      a:visited {
+        color: #9e9fa1;
+        text-transform: uppercase;
+      }
+      a:focus,
+      a:active,
+      a:hover {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
 }

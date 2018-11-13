@@ -58,7 +58,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #525e6a;
   text-align: left;
   background-color: #fff; }
 
@@ -1464,7 +1464,7 @@ select.form-control:focus::-ms-value {
   padding-bottom: 0.375rem;
   margin-bottom: 0;
   line-height: 1.5;
-  color: #212529;
+  color: #525e6a;
   background-color: transparent;
   border: solid transparent;
   border-width: 1px 0; }
@@ -2186,7 +2186,7 @@ input[type="button"].btn-block {
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 1rem;
-  color: #212529;
+  color: #525e6a;
   text-align: left;
   list-style: none;
   background-color: #fff;
@@ -3636,7 +3636,7 @@ input[type="button"].btn-block {
     text-decoration: none;
     background-color: #f8f9fa; }
   .list-group-item-action:active {
-    color: #212529;
+    color: #525e6a;
     background-color: #e9ecef; }
 
 .list-group-item {
@@ -4114,7 +4114,7 @@ button.close {
 
 .popover-body {
   padding: 0.5rem 0.75rem;
-  color: #212529; }
+  color: #525e6a; }
 
 .carousel {
   position: relative; }
@@ -5365,7 +5365,7 @@ button.bg-dark:focus {
 .mx-2 {
   margin-right: 0.5rem !important; }
 
-.mb-2,
+.mb-2, .card-group .card .eyebrow,
 .my-2 {
   margin-bottom: 0.5rem !important; }
 
@@ -6683,7 +6683,7 @@ a.text-dark:hover, a.text-dark:focus {
   color: #1d2124 !important; }
 
 .text-body {
-  color: #212529 !important; }
+  color: #525e6a !important; }
 
 .text-muted {
   color: #6c757d !important; }
@@ -6780,14 +6780,25 @@ a.text-dark:hover, a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
-.card {
+.card-group .card {
   border: none;
   border-radius: 10px;
   cursor: pointer;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-  transition: box-shadow 1s ease-out; }
-  .card:hover {
+  transition: box-shadow .5s ease-out;
+  margin-bottom: 2rem; }
+  .card-group .card:hover {
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3); }
+  .card-group .card .card-body {
+    padding: 27px 46px; }
+  .card-group .card .eyebrow {
+    display: inline-block;
+    clear: both;
+    background: #107d27;
+    color: #fff;
+    font-size: .7rem;
+    border-radius: 5px;
+    padding: 7px 9px; }
 
 body.show-contact footer {
   margin-top: 220px; }
@@ -6796,7 +6807,7 @@ body.show-contact footer {
     background-color: #fff;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); }
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); }
     body.show-contact footer .contact form.contact-form {
       padding: 50px 75px; }
     body.show-contact footer .contact h2 {
@@ -6815,12 +6826,35 @@ form.contact-form .form-field {
 
 body {
   color: #525e6a; }
-  body .main-content {
+  body:not(.layout-fluid) .main-content {
     padding: 4rem 0; }
 
 footer {
   background: #221f25;
   color: #9fa0a2; }
+  footer .phone,
+  footer .email {
+    display: inline; }
+  footer .address {
+    display: block; }
+  footer .primary-navigation {
+    display: inline-block;
+    list-style: none;
+    border-top: 1px solid #9e9fa1;
+    padding: 50px 0;
+    margin: 50px 0 0 0; }
+    footer .primary-navigation li {
+      display: inline-block;
+      padding: 0 16px; }
+      footer .primary-navigation li a:link,
+      footer .primary-navigation li a:visited {
+        color: #9e9fa1;
+        text-transform: uppercase; }
+      footer .primary-navigation li a:focus,
+      footer .primary-navigation li a:active,
+      footer .primary-navigation li a:hover {
+        color: #fff;
+        text-decoration: none; }
 
 .btn {
   border-radius: 100px; }
@@ -6841,14 +6875,59 @@ form .required label:after {
   content: ' (required)'; }
 
 header.jumbotron {
-  background-color: #107d27;
+  background-image: linear-gradient(to bottom, #107d27 0%, #29e450 100%);
   color: #fff;
   margin: 0;
-  padding: 0; }
-  header.jumbotron h1 {
+  padding: 0;
+  position: relative; }
+  header.jumbotron:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #107d27;
+    background-image: url(/img/header/header-dallas-tx-skyline.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    opacity: .5; }
+  header.jumbotron > * {
+    position: relative;
+    z-index: 99; }
+  header.jumbotron h1.display-4 {
     line-height: 234px;
     margin: 0; }
 
 nav.navbar {
   background: #fff;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  min-height: 90px;
+  padding: 0 25px; }
+  nav.navbar .secondary-navigation li {
+    margin-left: 10px; }
+  nav.navbar .primary-navigation {
+    margin-left: auto; }
+    nav.navbar .primary-navigation li {
+      padding: 0 10px; }
+    nav.navbar .primary-navigation a:link,
+    nav.navbar .primary-navigation a:visited {
+      padding: 0 10px;
+      line-height: 90px;
+      color: #525e6a;
+      border-color: #107d27; }
+    nav.navbar .primary-navigation a:focus,
+    nav.navbar .primary-navigation a:active,
+    nav.navbar .primary-navigation a:hover {
+      border-top: 4px solid #107d27;
+      line-height: 82px;
+      color: #107d27; }
+    nav.navbar .primary-navigation li.active a:link {
+      border-top: 4px solid #107d27;
+      line-height: 82px;
+      margin-bottom: 4px; }
+  nav.navbar .secondary-navigation {
+    border-left: 1px solid #ccc; }

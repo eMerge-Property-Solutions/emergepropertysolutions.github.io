@@ -2,5 +2,42 @@ nav {
   &.navbar {
     background: #fff;
     box-shadow: 0 0 5px rgba(0,0,0,.5);
+    min-height: 90px;
+    padding: 0 25px;
+    .secondary-navigation {
+      li {
+          margin-left: 10px;
+      }
+    }
+    .primary-navigation {
+      margin-left: auto;
+      li {
+        padding: 0 10px;
+      }
+      a:link,
+      a:visited {
+        padding: 0 10px;
+        line-height: 90px;
+        color: $body-color;
+        border-color: $primary;
+      }
+      a:focus,
+      a:active,
+      a:hover {
+        border-top: 4px solid $primary;
+        line-height: 82px;
+        color: $primary;
+      }
+      li.active {
+        a:link {
+          border-top: 4px solid $primary;
+          line-height: 82px;
+          margin-bottom: 4px;
+        }
+      }
+    }
+    .secondary-navigation {
+      border-left: 1px solid #ccc;
+    }
   }
 }
