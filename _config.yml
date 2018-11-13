@@ -8,7 +8,13 @@ twitter_username: emergepropsol
 linkedin_username: emergepropertysolutions
 
 # Build settings
-exclude: [_lib]
+exclude: 
+  - _lib
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
 timezone: America/Chicago
 markdown: kramdown
 plugins:
