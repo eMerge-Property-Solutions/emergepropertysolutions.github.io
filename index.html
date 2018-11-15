@@ -19,7 +19,7 @@ pagination:
   }
 </style>
 
-<header class="jumbotron jumbotron-fluid pb-5 pt-5 {% if page.header_image == false %}jumbotron-default{% endif %}">
+<header class="jumbotron jumbotron-fluid pb-5 pt-5 mb-0 {% if page.header_image == false %}jumbotron-default{% endif %}">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-8 text-center mt-5 mb-5">
@@ -31,51 +31,71 @@ pagination:
   </div>
 </header>
 
-<div class="container">
-
-  <div class="band-products">
+<div class="band-products pt-5 pb-5">
+  <div class="container mt-4 mb-4">
     <div class="row">
       <div class="col-6">
-        <h2>eMerge Products</h2>
+        <h2 class="mb-0"><big>eMerge Products</big></h2>
         <p><big>Providing high quality so you can spend more time on the things that are really important.</big></p>
         <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <p>Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec ullamcorper nulla non metus auctor fringilla. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+        <hr class="mb-5 mt-5" />
         <p><a href="/contact" class="btn btn-primary">Contact us for more information &nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a></p>
       </div>
     </div>
   </div>
+</div>
 
-  <div class="band-why">
-    <div class="row justify-content-md-center">
+<div class="band-why pt-5 pb-5">
+  <div class="container mt-4 mb-4">
+    <div class="row justify-content-md-center mb-5">
       <div class="col-6">
-        <h2 class="text-center">Why eMerge</h2>
+        <h2 class="text-center mb-0"><big>Why eMerge</big></h2>
         <p class="text-center"><big>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</big></p>
       </div>
     </div>
     <div class="row">
-      <div class="col-3 text-center">
-        <h3>Expertise</h3>
-        <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div class="col-3 text-center card-group">
+        <div class="card">
+          <div class="card-body">
+            <h3><strong>Expertise</strong></h3>
+            <p>eMerge Property Solutions has over 30 years of experience in solving valuation needs for various types of clients.  Our true valuations expertise has been time tested and allows us to provide true risk mitigation value.</p>
+          </div>
+        </div>
       </div>
-      <div class="col-3 text-center">
-        <h3>Commitment</h3>
-        <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div class="col-3 text-center card-group">
+        <div class="card">
+          <div class="card-body">
+            <h3><strong>Commitment</strong></h3>
+            <p>eMerge Property Solutions is committed to providing excellence in the small details everyday that will proivde our clients the results they need to be succesful.</p>
+          </div>
+        </div>
       </div>
-      <div class="col-3 text-center">
-        <h3>Technology</h3>
-        <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div class="col-3 text-center card-group">
+        <div class="card">
+          <div class="card-body">
+            <h3><strong>Technology</strong></h3>
+            <p>eMerge Property Solutions has implemented state of the art technology from process flow to analytics.  In today's fast moving world, eMerge has not only embraced the technology, we have used it to make our product services ever more useful for our clients.</p>
+          </div>
+        </div>
       </div>
-      <div class="col-3 text-center">
-        <h3>Experience</h3>
-        <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div class="col-3 text-center card-group">
+        <div class="card">
+          <div class="card-body">
+            <h3><strong>Reliable</strong></h3>
+            <p>eMerge Property Solutions is built on the promise of always being available to our clients and our vendors.  We undertand that being reliable is a pillar to long lasting and  meaningful relationships in business.</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+</div>
 
-  <div class="band-news pb-5">
-    <div class="row justify-content-md-center">
+<div class="band-news pt-5 pb-5">
+  <div class="container mt-4 mb-4">
+    <div class="row justify-content-md-center mb-5">
       <div class="col-6">
-        <h2 class="text-center">Latest News</h2>
+        <h2 class="text-center mb-0"><big>Latest News</big></h2>
         <p class="text-center"><big>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</big></p>
       </div>
     </div>
@@ -97,8 +117,9 @@ pagination:
 
     </div>
     <div class="row">
-      <p class="col-12 text-center"><a href="/news" class="btn btn-outline-primary">See More News</a></p>
+      <p class="col-12 text-center"><a href="/news" class="btn btn-outline-primary btn-lg">See More News</a></p>
     </div>
   </div>
+</div>
 
 </div>

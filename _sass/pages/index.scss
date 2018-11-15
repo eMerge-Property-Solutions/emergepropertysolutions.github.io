@@ -1,0 +1,13 @@
+body.page-index {
+  .band-why {
+    background: #f9fafb;
+    .card-group {
+      .card {
+        cursor: default;
+        &:hover {
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        }
+      }
+    }
+  }
+}
