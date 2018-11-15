@@ -35,3 +35,11 @@ pagination:
   trail:
     before: 2
     after: 2
+
+defaults:
+  - scope:
+      path: ""
+      type: news
+    values:
+      layout: news
+      excerpt_separator: <!--more-->

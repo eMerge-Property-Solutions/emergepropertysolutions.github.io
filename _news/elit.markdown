@@ -1,8 +1,6 @@
 ---
-layout: default
 date: 2018-10-08
-title: Lorem
-excerpt_separator: <!--more-->
+title: Elit
 ---
 
 Morbi leo risus, porta ac consectetur ac, vestibulum at eros.

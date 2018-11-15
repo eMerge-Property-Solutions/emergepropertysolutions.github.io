@@ -8,23 +8,23 @@
 {% include header.html %}
 
 {% if page.show_title != false %}
-<header class="jumbotron jumbotron-fluid">
-  <div class="container align-self-center">
-    <h1 class="display-4 text-center">{{ page.title }}</h1>
-  </div>
-</header>
+<header class="jumbotron jumbotron-fluid"></header>
 {% endif %}
 
 <div class="main-content">
-  <article>
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="{% if page.wide == true %}col-12{% else %}col-sm-12 col-md-12 col-lg-9 col-xl-9{% endif %}">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-12 col-lg-9 col-xl-9">
+        <article>
+          <div class="eyebrow">{{ page.date | date: "%B %e, %Y" }}</div>
+          <h2>{{ page.title }}</h2>
+          <div class="content">
           {{ content }}
-        </div>
+          </div>
+        </article>
       </div>
     </div>
-  </article>
+  </div>
 </div>
 
 <footer>

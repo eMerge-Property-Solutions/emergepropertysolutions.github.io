@@ -3,7 +3,7 @@
 
 {% include head.html %}
 
-<body class="layout-view {% if page.show_contact != false %}show-contact{% endif %}">
+<body class="layout-{{ page.layout }} {% if page.show_contact != false %}show-contact{% endif %}">
 
 {% include header.html %}
 

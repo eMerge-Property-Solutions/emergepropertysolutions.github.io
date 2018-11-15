@@ -1,33 +1,44 @@
 header {
-  &.jumbotron {
-    background-image: linear-gradient(to bottom, #5faf71 0%, lighten(#5faf71, 15%) 100%);
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    &:after {
-      content: ' ';
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      background-color: rgba($primary, 1);
-      background-image: url(/img/header/header-dallas-tx-skyline.jpg);
-      background-size: cover;
-      background-position: center -280px;
-      background-blend-mode: overlay;
-      background-attachment: scroll;
-      opacity: .3;
-    }
-    & > * {
-      position: relative;
-      z-index: 99;
-    }
-    h1.display-4 {
-      line-height: 234px;
+  body:not(.layout-news) & {
+    &.jumbotron {
+      background-image: linear-gradient(to bottom, #5faf71 0%, lighten(#5faf71, 15%) 100%);
+      color: #fff;
       margin: 0;
+      padding: 0;
+      position: relative;
+      &:after {
+        content: ' ';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba($primary, 1);
+        background-image: url(/img/header/header-dallas-tx-skyline.jpg);
+        background-size: cover;
+        background-position: center -280px;
+        background-blend-mode: overlay;
+        background-attachment: scroll;
+        opacity: .3;
+      }
+      & > * {
+        position: relative;
+        z-index: 99;
+      }
+      h1.display-4 {
+        line-height: 234px;
+        margin: 0;
+      }
+    }
+  }
+  body.layout-news & {
+    &.jumbotron {
+      background-image: url(/img/header/header-dallas-texas-usa-desat.jpg);
+      background-size: cover;
+      background-position: center center;
+      background-attachment: scroll;
+      min-height: 385px;
     }
   }
 }

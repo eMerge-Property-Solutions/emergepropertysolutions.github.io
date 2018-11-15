@@ -12,17 +12,6 @@
     .card-body {
       padding: 27px 46px;
     }
-    .eyebrow {
-      @extend .mb-2;
-      display: inline-block;
-      clear: both;
-      background: $primary;
-      color: #fff;
-      font-size: .7rem;
-      border-radius: 5px;
-      padding: 7px 9px;
-      margin-bottom: 1rem;
-    }
     .card-title {
       font-size: 1.2rem;
       font-weight: 500;

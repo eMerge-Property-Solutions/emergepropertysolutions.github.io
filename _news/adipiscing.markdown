@@ -1,8 +1,7 @@
 ---
 layout: default
 date: 2018-10-07
-title: Lorem
-excerpt_separator: <!--more-->
+title: Adipiscing
 ---
 
 Morbi leo risus, porta ac consectetur ac, vestibulum at eros.

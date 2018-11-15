@@ -1,7 +1,6 @@
 ---
-layout: default
 date: 2018-10-01
-title: Lorem ipsum dolor sit amet
+title: Ipsum
 ---
 
 Morbi leo risus, porta ac consectetur ac, vestibulum at eros.

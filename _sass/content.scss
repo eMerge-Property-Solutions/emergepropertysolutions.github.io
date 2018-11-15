@@ -6,6 +6,16 @@ body {
       padding: 4rem 0;
     }
   }
+  &.layout-news {
+    .main-content {
+      padding: 0 0 4rem 0;
+      margin-top: -85px;
+      article {
+        padding: 2rem 3rem;
+        background: #fff;
+      }
+    }
+  }
 }
 
 strong {
@@ -58,5 +68,33 @@ h4 {
   &.btn-lg {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+}
+
+.eyebrow {
+  @extend .mb-3;
+  display: inline-block;
+  clear: both;
+  background: $primary;
+  color: #fff;
+  font-size: .7rem;
+  border-radius: 5px;
+  padding: .5rem .8rem;
+}
+
+blockquote {
+  @extend .mt-5;
+  @extend .mb-5;
+  font-weight: 700;
+  color: #000;
+  font-size: 1.4rem;
+  text-align: center;
+  & *:first-child:before {
+    content: '“';
+    display: inline;
+  }
+  & *:last-child:after {
+    content: '”';
+    display: inline;
   }
 }

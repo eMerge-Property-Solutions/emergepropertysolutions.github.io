@@ -1,7 +1,6 @@
 ---
-layout: default
 date: 2018-10-03
-title: Lorem ipsum dolor sit amet
+title: Dolor
 ---
 
 Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
