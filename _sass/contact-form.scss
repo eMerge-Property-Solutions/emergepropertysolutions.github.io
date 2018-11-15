@@ -20,6 +20,7 @@ body.show-contact {
 }
 
 form.contact-form {
+  padding: 50px 75px;
   label {
     display: block;
   }
@@ -33,24 +34,19 @@ form.contact-form {
   }
 }
 
-@include media-breakpoint-up(sm) {
-  footer {
-    form.contact-form {
-      padding: 50px 75px;
-    }
-  }
-}
 @include media-breakpoint-down(sm) {
-  footer {
-    .contact {
-      h2 {
-        font-size: 1.4rem;
-        line-height: 2rem;
-        padding: 1rem;
+  body.show-contact {
+    footer {
+      .contact {
+        h2 {
+          font-size: 1.4rem;
+          line-height: 2rem;
+          padding: 1rem;
+        }
       }
     }
-    form.contact-form {
-      padding: 20px 30px;
-    }
+  }
+  form.contact-form {
+    padding: 20px 30px;
   }
 }
