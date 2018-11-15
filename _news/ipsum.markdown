@@ -1,6 +1,7 @@
 ---
 date: 2018-10-01
 title: Ipsum
+image: https://via.placeholder.com/380x255
 ---
 
 Morbi leo risus, porta ac consectetur ac, vestibulum at eros.

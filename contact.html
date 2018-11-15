@@ -5,9 +5,8 @@ show_contact: false
 permalink: '/contact/'
 ---
 
-<p class="mb-3 text-center"><big><strong>Phone:</strong> <a href="tel:+18174404975">817-440-4975</a></big></p>
-<address class="mb-5 text-center"><big>8325 Whitley Road Suite 200<br />
-  Watauga, TX 76148</big></address>
+<p class="mb-3 text-center"><big><strong>Phone:</strong> <a href="tel:{{ site.contact_phone | replace: "-", "" | replace: ".", "" | replace: "(", "" | replace: ")", "" | replace: " ", "" }}">{{ site.contact_phone }}</a></big></p>
+<address class="mb-5 text-center"><big>{{ site.contact_address }}</big></address>
 
 <div class="pt-5">
 {% include contact-form.html %}

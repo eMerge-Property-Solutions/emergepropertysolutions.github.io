@@ -85,12 +85,11 @@ pagination:
       {% assign mod = forloop.index %}
       <div class="col-lg-4 col-md-12 card-group">
         <article class="card" onclick="window.location='{{ article.url }}'">
-          <img class="card-img-top" src="https://via.placeholder.com/382x255" alt="Card image cap">
+          <img class="card-img-top" src="https://via.placeholder.com/382x255" alt="{{ article.title }}" title="{{ article.title }}">
           <div class="card-body">
             <div class="eyebrow">{{ article.date | date: "%B %e, %Y" }}</div>
             <h2 class="card-title">{{ article.title }}</h2>
             <div class="card-text">{{ article.excerpt | markdownify }}</div>
-            <!--<a href="{{ article.url }}" class="btn btn-primary">Go somewhere</a>-->
           </div>
         </article>
       </div>
