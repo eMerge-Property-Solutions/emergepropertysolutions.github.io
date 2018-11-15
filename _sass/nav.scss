@@ -62,6 +62,7 @@ nav {
         }
       }
       .navbar-collapse {
+        z-index: 9999;
         background-image: linear-gradient(to bottom, #117e28 0%, #32a750 100%);
         position: absolute;
         top: 0;
