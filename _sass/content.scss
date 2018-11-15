@@ -16,6 +16,10 @@ body {
       }
     }
   }
+  a:link,
+  a:visited {
+    transition: color .25s ease-out;
+  }
 }
 
 strong {

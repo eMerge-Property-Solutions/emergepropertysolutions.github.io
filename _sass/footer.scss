@@ -36,6 +36,35 @@ footer {
       padding: 0 16px;
     }
   }
+  ul.social-links {
+    list-style: none;
+    display: block;
+    text-align: center;
+    li {
+      display: inline;
+      a:link,
+      a:visited {
+        color: #221f25;
+        background: #9fa0a2;
+        display: inline-block;
+        width: 2.5rem;
+        line-height: 2.5rem;
+        text-align: center;
+        border-radius: 100rem;
+        font-size: 1.4rem;
+        transition: box-shadow .25s ease-out, transform .25s ease-out, background .25s ease-out;
+        margin: 0px 7px;
+        box-shadow: 0 0 0 rgba(0,0,0,0);
+      }
+      a:focus,
+      a:active,
+      a:hover {
+        background: #fff;
+        transform: scale(1.2);
+        box-shadow: 0 5px 7px rgba(0,0,0,.5);
+      }
+    }
+  }
   .copyright {
     font-size: .8rem;
   }
