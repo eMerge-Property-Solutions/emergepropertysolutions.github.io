@@ -6,7 +6,7 @@ nav {
     padding: 0 25px;
     .secondary-navigation {
       li {
-          margin-left: 10px;
+        margin-left: 10px;
       }
     }
     .primary-navigation {
@@ -39,6 +39,102 @@ nav {
     .secondary-navigation {
       border-left: 1px solid #ccc;
       font-weight: 500;
+    }
+  }
+  .navbar-toggler {
+    color: $primary;
+    font-size: 1.6rem;
+    margin-right: 20px;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  nav {
+    &.navbar {
+      background: $white;
+      box-shadow: 0 0 5px rgba(0,0,0,.5);
+      padding: 0;
+      min-height: auto;
+      .navbar-brand {
+        margin: 15px 20px;
+        img {
+          height: 40px;
+        }
+      }
+      .navbar-collapse {
+        background-image: linear-gradient(to bottom, #117e28 0%, #32a750 100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        .navbar-toggler {
+          color: $white;
+          margin: 22.5px 20px;
+        }
+      }
+      .primary-navigation {
+        text-align: center;
+        padding: 0;
+        li {
+          border-bottom: 1px solid rgba(255,255,255,.25);
+          padding: 0;
+        }
+        a.nav-link:link,
+        a.nav-link:visited {
+          line-height: 50px;
+          color: $white;
+          padding: 0;
+          border-top: none;
+        }
+        a.nav-link:focus,
+        a.nav-link:active,
+        a.nav-link:hover {
+          border-top: none;
+          background: rgba(255,255,255,.10);
+        }
+        li.active {
+          a.nav-link:link {
+            border-top: none;
+            line-height: 50px;
+            background: rgba(255,255,255,.20);
+            margin-bottom: 0;
+          }
+        }
+      }
+      .secondary-navigation {
+        text-align: center;
+        padding-top: 15px;
+        a.nav-link:link,
+        a.nav-link:visited,
+        a.nav-link:focus,
+        a.nav-link:active,
+        a.nav-link:hover {
+          line-height: 50px;
+          color: $white;
+          padding: 0;
+        }
+        li {
+          margin: 0 0 15px 0;
+        }
+        .btn {
+          min-width: 180px;
+          &.btn-outline-primary {
+            color: $white;
+            border-color: $white;
+            &:focus,
+            &:active,
+            &:hover {
+              background-color: $white;
+              color: $primary;
+            }
+          }
+          &.btn-primary {
+            border-color: $white;
+            background-color: $white;
+            color: $primary;
+          }
+        }
+      }
     }
   }
 }

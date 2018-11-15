@@ -16,7 +16,7 @@ header {
     }
   }
   &.jumbotron-default {
-    background-image: linear-gradient(to bottom, #5faf71 0%, lighten(#5faf71, 15%) 100%);
+    background-image: linear-gradient(to bottom, #117e28 0%, #32a750 100%);
     margin: 0;
     padding: 0;
     position: relative;
@@ -40,6 +40,16 @@ header {
     & > * {
       position: relative;
       z-index: 99;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  header {
+    &.jumbotron-default {
+      &:after {
+        background-position: center center;
+      }
     }
   }
 }
