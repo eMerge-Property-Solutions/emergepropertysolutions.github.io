@@ -1,6 +1,6 @@
 header {
   &.jumbotron {
-    background-image: linear-gradient(to bottom, $primary 0%, lighten($primary, 25%) 100%);
+    background-image: linear-gradient(to bottom, #5faf71 0%, lighten(#5faf71, 15%) 100%);
     color: #fff;
     margin: 0;
     padding: 0;
@@ -16,10 +16,10 @@ header {
       background-color: rgba($primary, 1);
       background-image: url(/img/header/header-dallas-tx-skyline.jpg);
       background-size: cover;
-      background-position: center bottom;
+      background-position: center -280px;
       background-blend-mode: overlay;
-      background-attachment: fixed;
-      opacity: .5;
+      background-attachment: scroll;
+      opacity: .3;
     }
     & > * {
       position: relative;

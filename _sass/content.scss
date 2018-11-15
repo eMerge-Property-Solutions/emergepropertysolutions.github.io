@@ -7,3 +7,56 @@ body {
     }
   }
 }
+
+strong {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: 500;
+  line-height: 3.6rem;
+  &.display-4 {
+    font-size: 2.8rem;
+    font-weight: 500;
+    line-height: 234px;
+  }
+}
+
+h2 {
+  color: $black;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2.8rem;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  color: $black;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+  line-height: 2rem;
+  strong {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+}
+
+h4 {
+  color: $body-color;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 1.2rem;
+  line-height: 2rem;
+}
+
+.btn {
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  font-weight: 500;
+  &.btn-lg {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
