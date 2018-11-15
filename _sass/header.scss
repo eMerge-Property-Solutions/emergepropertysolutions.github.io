@@ -2,10 +2,9 @@ header {
   &.jumbotron {
     background-color: #333;
     color: $white;
-    text-shadow: 0 3px 7px rgba(0,0,0,.3);
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-repeat: no-repeat;
     min-height: 385px;
     h1 {
