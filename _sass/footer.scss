@@ -9,7 +9,7 @@ footer {
   a:focus,
   a:active,
   a:hover {
-    color: #fff;
+    color: $white;
     text-decoration: none;
   }
   .phone,
@@ -59,7 +59,7 @@ footer {
       a:focus,
       a:active,
       a:hover {
-        background: #fff;
+        background: $white;
         transform: scale(1.2);
         box-shadow: 0 5px 7px rgba(0,0,0,.5);
       }

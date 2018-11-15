@@ -3,17 +3,14 @@ body.show-contact {
     margin-top: 220px;
     .contact {
       margin-top: -220px;
-      background-color: #fff;
+      background-color: $white;
       border-radius: 10px;
       overflow: hidden;
       box-shadow: 0 0 20px rgba(0, 0, 0, .15);
-      form.contact-form {
-        padding: 50px 75px;
-      }
       h2 {
         @extend .text-center;
         background-color: $primary;
-        color: #fff;
+        color: $white;
         line-height: 83px;
         font-size: 2rem;
         font-weight: 100;
@@ -33,5 +30,27 @@ form.contact-form {
       display: block;
       width: 100%;
     }
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  form.contact-form {
+    padding: 50px 75px;
+  }
+}
+@include media-breakpoint-down(sm) {
+  body.show-contact {
+    footer {
+      .contact {
+        h2 {
+          font-size: 1.4rem;
+          line-height: 2rem;
+          padding: 1rem;
+        }
+      }
+    }
+  }
+  form.contact-form {
+    padding: 20px 30px;
   }
 }

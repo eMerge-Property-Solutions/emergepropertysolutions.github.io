@@ -8,7 +8,7 @@
 {% include header.html %}
 
 {% if page.show_title != false %}
-<header class="jumbotron jumbotron-fluid"></header>
+<header class="jumbotron jumbotron-fluid {% if page.header_image == null %}jumbotron-default{% endif %}"></header>
 {% endif %}
 
 <div class="main-content">
