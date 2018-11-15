@@ -34,23 +34,23 @@ form.contact-form {
 }
 
 @include media-breakpoint-up(sm) {
-  form.contact-form {
-    padding: 50px 75px;
+  footer {
+    form.contact-form {
+      padding: 50px 75px;
+    }
   }
 }
 @include media-breakpoint-down(sm) {
-  body.show-contact {
-    footer {
-      .contact {
-        h2 {
-          font-size: 1.4rem;
-          line-height: 2rem;
-          padding: 1rem;
-        }
+  footer {
+    .contact {
+      h2 {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        padding: 1rem;
       }
     }
-  }
-  form.contact-form {
-    padding: 20px 30px;
+    form.contact-form {
+      padding: 20px 30px;
+    }
   }
 }
