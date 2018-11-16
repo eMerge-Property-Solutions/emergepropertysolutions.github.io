@@ -1,7 +1,7 @@
 ---
 name: Carlos Balderas
 title: Chief Operating Officer
-photo: https://via.placeholder.com/150x150
+photo: /img/team/carlos-balderas.jpeg
 order: 20
 ---
 

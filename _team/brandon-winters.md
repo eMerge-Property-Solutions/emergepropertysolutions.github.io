@@ -1,7 +1,7 @@
 ---
 name: Brandon Winters
 title: Chief Executive Officer
-photo: https://via.placeholder.com/150x150
+photo: /img/team/brandon-winters.jpeg
 order: 10
 ---
 

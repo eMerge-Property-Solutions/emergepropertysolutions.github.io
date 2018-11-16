@@ -1,5 +1,8 @@
-{% assign page_class = page.url | remove_first: "/" | remove_last: "/" | replace: ".html", "" | split: "/" | join: "--" %}
+---
+layout: compress
+---
 
+{% assign page_class = page.url | remove_first: "/" | remove_last: "/" | replace: ".html", "" | split: "/" | join: "--" %}
 
 <!DOCTYPE html>
 <html lang="en">
