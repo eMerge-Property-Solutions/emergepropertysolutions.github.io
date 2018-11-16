@@ -1,46 +1,11 @@
 ---
-layout: compress
+layout: default
 ---
 
-{% assign page_class = page.url | remove_first: "/" | remove_last: "/" | replace: ".html", "" | split: "/" | join: "--" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-{% include head.html %}
-
-<body class="page-{{ page_class }} layout-{{ page.layout }} {% if page.show_contact != false %}show-contact{% endif %}">
-
-{% include header.html %}
-
-{% if page.show_title != false %}
-<header class="jumbotron jumbotron-fluid {% if page.header_image == null %}jumbotron-default{% endif %}" >
-  <div class="container">
-    <h1 class="display-4 text-center">{{ page.title }}</h1>
-  </div>
-</header>
-{% endif %}
-
-<div class="main-content">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="{% if page.wide == true %}col-12{% else %}col-sm-12 col-md-12 col-lg-9 col-xl-8{% endif %}">
-        {{ content }}
-      </div>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="{% if page.wide == true %}col-12{% else %}col-sm-12 col-md-12 col-lg-9 col-xl-8{% endif %}">
+      {{ content }}
     </div>
   </div>
 </div>
-
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        {% include footer.html %}
-      </div>
-    </div>
-  </div>
-</footer>
-
-
-</body>
-</html>

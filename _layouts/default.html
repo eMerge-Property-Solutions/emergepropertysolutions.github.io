@@ -22,15 +22,7 @@ layout: compress
 {% endif %}
 
 <div class="main-content">
-  <article>
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="{% if page.wide == true %}col-12{% else %}col-sm-12 col-md-12 col-lg-9 col-xl-9{% endif %}">
-          {{ content }}
-        </div>
-      </div>
-    </div>
-  </article>
+{{ content }}
 </div>
 
 <footer>
@@ -42,7 +34,6 @@ layout: compress
     </div>
   </div>
 </footer>
-
 
 </body>
 </html>
