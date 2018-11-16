@@ -3,3 +3,4 @@
 .jekyll-metadata
 .idea
 _site/
+_compress_images_cache.yml

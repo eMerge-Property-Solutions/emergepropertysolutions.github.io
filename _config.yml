@@ -48,9 +48,13 @@ defaults:
     values:
       layout: news
       excerpt_separator: <!--more-->
+      show_title: false
       header_image: "/img/header/header-dallas-texas-usa-desat.jpg"
 
 compress_html:
   clippings: all
   comments:  ["<!-- ", " -->"]
   endings:   all
+
+sass:
+  style: compressed
