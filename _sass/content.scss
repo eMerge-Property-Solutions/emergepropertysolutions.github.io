@@ -25,17 +25,17 @@ body {
 }
 
 strong {
-  font-weight: 500;
+  font-weight: 400;
 }
 
 h1 {
   color: $black;
   font-size: 2.8rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 3.6rem;
   &.display-4 {
     font-size: 2.8rem;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 234px;
   }
 }
@@ -43,7 +43,7 @@ h1 {
 h2 {
   color: $black;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 2.8rem;
   margin-bottom: 2rem;
 }
@@ -51,7 +51,7 @@ h2 {
 h3 {
   color: $black;
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 1.2rem;
   line-height: 2rem;
   strong {
@@ -63,7 +63,7 @@ h3 {
 h4 {
   color: $body-color;
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 1.2rem;
   line-height: 2rem;
 }
@@ -71,7 +71,7 @@ h4 {
 .btn {
   padding-left: 1.6rem;
   padding-right: 1.6rem;
-  font-weight: 500;
+  font-weight: 400;
   &.btn-lg {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -121,7 +121,7 @@ blockquote {
     z-index: 9;
     text-transform: uppercase;
     font-size: 1.1rem;
-    font-weight: 500;
+    font-weight: 400;
     .fas {
       display: block;
       font-size: 2rem;
