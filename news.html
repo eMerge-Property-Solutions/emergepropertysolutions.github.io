@@ -25,7 +25,7 @@ pagination:
 <div class="col-lg-4 col-md-12 card-group">
 
   <article class="card" onclick="window.location='{{ article.url }}'">
-    <img class="card-img-top" src="{{ article.image }}" alt="Card image cap">
+    <img class="card-img-top" src="{{ article.image }}" alt="{{ article.title }}" title="{{ article.title }}">
     <div class="card-body">
       <div class="eyebrow">{{ article.date | date: "%B %e, %Y" }}</div>
       <h2 class="card-title">{{ article.title }}</h2>
