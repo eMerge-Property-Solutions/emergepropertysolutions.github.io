@@ -101,12 +101,12 @@ pagination:
         <p class="text-center"><big>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</big></p>
       </div>
     </div>
-    <div class="row">
+    <div class="row justify-content-center">
 
       {% for article in paginator.posts %}
       {% assign mod = forloop.index %}
       <div class="col-lg-4 col-md-12 card-group">
-        <article class="card" onclick="window.location='{{ article.url }}'">
+        <article class="card" onclick="window.location='{% if article.link %}{{ article.link }}{% else %}{{ article.url }}{% endif %}'">
           <img class="card-img-top" src="{{ article.image }}" alt="{{ article.title }}" title="{{ article.title }}">
           <div class="card-body">
             <div class="eyebrow">{{ article.date | date: "%B %e, %Y" }}</div>
