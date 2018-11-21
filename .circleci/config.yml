@@ -41,7 +41,7 @@ jobs:
     docker:
       - image: circleci/python:3.6.3
     environment:
-      S3_BUCKET_NAME: emergeps-www
+      S3_BUCKET_NAME: emergepropertysolutions.com
     steps:
       - attach_workspace:
           at: ./
