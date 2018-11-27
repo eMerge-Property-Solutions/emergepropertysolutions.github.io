@@ -155,3 +155,22 @@ blockquote {
     display: none;
   }
 }
+
+@include media-breakpoint-up(md) {
+  .anchor {
+    border-top: 90px solid transparent;
+    margin-top: -90px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+  }
+}
+@include media-breakpoint-down(md) {
+  .anchor {
+    border-top: 80px solid transparent;
+    margin-top: -80px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+  }
+}
