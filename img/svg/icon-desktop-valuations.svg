@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 343.2 297.44">
+  <defs>
+    <style>.cls-1{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:11.44px;}</style>
+  </defs>
+  <title>Asset 5</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="icon">
+      <rect class="cls-1" x="5.72" y="5.72" width="331.76" height="228.8" rx="18.27" ry="18.27"/>
+      <line class="cls-1" x1="11.44" y1="40.04" x2="331.76" y2="40.04"/>
+      <line class="cls-1" x1="11.44" y1="188.76" x2="331.76" y2="188.76"/>
+      <polygon class="cls-1" points="210.19 291.72 124.92 291.72 137.1 234.52 198.01 234.52 210.19 291.72"/>
+      <line class="cls-1" x1="102.96" y1="291.72" x2="228.8" y2="291.72"/>
+    </g>
+  </g>
+</svg>

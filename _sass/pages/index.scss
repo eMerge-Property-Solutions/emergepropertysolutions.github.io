@@ -3,9 +3,24 @@ body.page-index {
     background: #f9fafb;
     .card-group {
       .card {
+        margin-top: 65px;
         cursor: default;
         &:hover {
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        }
+        svg.icon-svg {
+          background: $primary;
+          background-image: linear-gradient(to bottom, #117e28 0%, #32a750 100%);
+          border-radius: 100px;
+          color: $white;
+          width: 130px;
+          height: 130px;
+          padding: 40px;
+          margin-top: -92px;
+          margin-bottom: 1rem;
+          * {
+            fill: currentColor !important;
+          }
         }
       }
     }

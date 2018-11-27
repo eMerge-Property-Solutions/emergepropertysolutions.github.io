@@ -1,0 +1,173 @@
+.widget-products {
+  margin-bottom: 5rem;
+  a.icon-svg:link,
+  a.icon-svg:visited {
+    display: block;
+    color: $body-color;
+    svg {
+      @extend .img-thumbnail;
+      background: $white;
+      transition: background .25s ease-out;
+      * {
+        fill: transparent !important;
+        stroke: $primary !important;
+        transition: stroke .25s ease-out;
+      }
+    }
+  }
+  a.icon-svg:focus,
+  a.icon-svg:active,
+  a.icon-svg:hover {
+    svg {
+      background: $primary;
+      * {
+        fill: transparent !important;
+        stroke: $white !important;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(xl) {
+  .widget-products {
+    a.icon-svg:link {
+      .caption {
+        left: -15px;
+        right: -15px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .widget-products {
+    a.icon-svg:link {
+      .caption {
+        left: 0px;
+        right: 0px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .widget-products {
+    position: relative;
+    min-height: 550px;
+    width: 100%;
+    a.icon-svg:link {
+      position: absolute;
+      width: 130px;
+      height: 130px;
+      .caption {
+        position: absolute;
+        top: 100%;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: .8rem;
+        font-weight: bold;
+        padding-top: 10px;
+      }
+      svg {
+        box-shadow: 0 0 20px rgba(0, 0, 0, .15);
+        padding: 30px;
+        width: 130px;
+        height: 130px;
+      }
+    }
+    .icon-svg:nth-child(4) {
+      top: 50%;
+      left: 50%;
+      margin-left: -65px;
+      margin-top: -65px;
+    }
+    .icon-svg:nth-child(3) {
+      top: 50%;
+      left: 0;
+      margin-top: -65px;
+    }
+    .icon-svg:nth-child(5) {
+      right: 0;
+      top: 50%;
+      margin-top: -65px;
+    }
+    .icon-svg:nth-child(2) {
+      right: 20%;
+      top: 0;
+    }
+    .icon-svg:nth-child(1) {
+      left: 20%;
+      top: 0;
+    }
+    .icon-svg:nth-child(7) {
+      right: 20%;
+      bottom: 0;
+    }
+    .icon-svg:nth-child(6) {
+      left: 20%;
+      bottom: 0;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .widget-products {
+    position: relative;
+    min-height: 450px;
+    width: 100%;
+    a.icon-svg:link {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      .caption {
+        position: absolute;
+        top: 100%;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: .8rem;
+        font-weight: bold;
+        padding-top: 10px;
+        left: -15px;
+        right: -15px;
+      }
+      svg {
+        box-shadow: 0 0 20px rgba(0, 0, 0, .15);
+        padding: 30px;
+        width: 100px;
+        height: 100px;
+      }
+    }
+    .icon-svg:nth-child(4) {
+      top: 50%;
+      left: 50%;
+      margin-left: -50px;
+      margin-top: -50px;
+    }
+    .icon-svg:nth-child(3) {
+      top: 50%;
+      left: 0;
+      margin-top: -50px;
+    }
+    .icon-svg:nth-child(5) {
+      right: 0;
+      top: 50%;
+      margin-top: -50px;
+    }
+    .icon-svg:nth-child(2) {
+      right: 20%;
+      top: 0;
+    }
+    .icon-svg:nth-child(1) {
+      left: 20%;
+      top: 0;
+    }
+    .icon-svg:nth-child(7) {
+      right: 20%;
+      bottom: 0;
+    }
+    .icon-svg:nth-child(6) {
+      left: 20%;
+      bottom: 0;
+    }
+  }
+}

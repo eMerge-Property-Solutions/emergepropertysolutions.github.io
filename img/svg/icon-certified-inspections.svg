@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 596.29 593.67">
+  <defs>
+    <style>.cls-1{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:20.92px;}</style>
+  </defs>
+  <title>Asset 8</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="icon">
+      <rect class="cls-1" x="10.46" y="18.31" width="146.46" height="146.46"/>
+      <polyline class="cls-1" points="58.39 63.86 83.44 115.07 216.42 10.46"/>
+      <rect class="cls-1" x="10.46" y="227.53" width="146.46" height="146.46"/>
+      <polyline class="cls-1" points="58.39 273.08 83.44 324.3 216.42 219.69"/>
+      <rect class="cls-1" x="10.46" y="436.75" width="146.46" height="146.46"/>
+      <line class="cls-1" x1="292.91" y1="478.6" x2="585.83" y2="478.6"/>
+      <line class="cls-1" x1="292.91" y1="541.37" x2="585.83" y2="541.37"/>
+      <line class="cls-1" x1="292.91" y1="269.38" x2="585.83" y2="269.38"/>
+      <line class="cls-1" x1="292.91" y1="332.14" x2="585.83" y2="332.14"/>
+      <line class="cls-1" x1="292.91" y1="60.15" x2="585.83" y2="60.15"/>
+      <line class="cls-1" x1="292.91" y1="122.92" x2="585.83" y2="122.92"/>
+    </g>
+  </g>
+</svg>

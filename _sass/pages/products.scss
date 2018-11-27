@@ -1,0 +1,13 @@
+body.page-products {
+  svg.icon-svg {
+    @extend .img-thumbnail;
+    background: $white;
+    padding: 60px;
+    max-width: 200px;
+    min-height: 200px;
+    * {
+      fill: transparent !important;
+      stroke: $primary !important;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 468.15 290.05">
+  <defs>
+    <style>.cls-1{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:10.18px;}</style>
+  </defs>
+  <title>Asset 4</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="icon">
+      <path class="cls-1"
+            d="M183.19,145A139.65,139.65,0,0,1,234.08,37.08a139.93,139.93,0,1,0,0,215.9A139.68,139.68,0,0,1,183.19,145Z"/>
+      <path class="cls-1"
+            d="M285,145A139.64,139.64,0,0,0,234.08,37.08a139.93,139.93,0,1,1,0,215.9A139.67,139.67,0,0,0,285,145Z"/>
+    </g>
+  </g>
+</svg>
