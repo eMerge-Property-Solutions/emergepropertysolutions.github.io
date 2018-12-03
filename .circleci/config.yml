@@ -53,7 +53,7 @@ jobs:
           command: ~/.local/bin/aws s3 sync ./_site s3://$S3_BUCKET_NAME/ --delete --acl public-read
       - run:
           name: Clear cache
-          command: bash ./repo/scripts/clear-cache.sh -k "$CLOUDFLARE_AUTH_KEY" -e "$CLOUDFLARE_AUTH_EMAIL" -z "$CLOUDFLARE_ZONE_ID"
+          command: pwd; ls -al
 workflows:
   version: 2
   test-deploy:
