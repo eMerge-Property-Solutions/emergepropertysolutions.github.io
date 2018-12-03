@@ -43,6 +43,7 @@ jobs:
     environment:
       S3_BUCKET_NAME: www.emergepropertysolutions.com
     steps:
+      - checkout
       - attach_workspace:
           at: ./
       - run:
