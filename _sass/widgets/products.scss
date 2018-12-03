@@ -117,8 +117,8 @@
     width: 100%;
     a.icon-svg:link {
       position: absolute;
-      width: 100px;
-      height: 100px;
+      width: 80px;
+      height: 80px;
       .caption {
         position: absolute;
         top: 100%;
@@ -132,26 +132,26 @@
       }
       svg {
         box-shadow: 0 0 20px rgba(0, 0, 0, .15);
-        padding: 30px;
-        width: 100px;
-        height: 100px;
+        padding: 20px;
+        width: 80px;
+        height: 80px;
       }
     }
     .icon-svg:nth-child(4) {
       top: 50%;
       left: 50%;
-      margin-left: -50px;
-      margin-top: -50px;
+      margin-left: -40px;
+      margin-top: -40px;
     }
     .icon-svg:nth-child(3) {
       top: 50%;
       left: 0;
-      margin-top: -50px;
+      margin-top: -40px;
     }
     .icon-svg:nth-child(5) {
       right: 0;
       top: 50%;
-      margin-top: -50px;
+      margin-top: -40px;
     }
     .icon-svg:nth-child(2) {
       right: 20%;
