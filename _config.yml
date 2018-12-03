@@ -51,6 +51,7 @@ defaults:
       excerpt_separator: <!--more-->
       show_title: false
       header_image: "/img/header/header-dallas-texas-usa-desat.jpg"
+      sitemap: false
 
 compress_html:
   clippings: all
