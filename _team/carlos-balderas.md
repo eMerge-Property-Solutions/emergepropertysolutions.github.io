@@ -1,6 +1,6 @@
 ---
 name: Carlos Balderas
-title: Chief Operating Officer
+title: COO, Co-Founder
 photo: /img/carlos-balderas-min.jpg
 order: 20
 ---
