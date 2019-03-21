@@ -1,6 +1,6 @@
 ---
 name: Brandon Winters
-title: Chief Executive Officer
+title: CEO, Co-Founder
 photo: /img/brandon-winters-min.jpg
 order: 10
 ---
