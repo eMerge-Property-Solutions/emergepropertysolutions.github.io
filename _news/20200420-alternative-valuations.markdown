@@ -3,8 +3,11 @@ date: 2020-04-20
 title: "The Emergence of Alternative Valuation Products"
 ---
 
-# **The Emergence of Alternative Valuation Products**
-## *The days of a one-size-fits-all solution are in the past.*
+Over the years, many things have changed in the real estate industry. That rings true for valuations as well. 
+With the advent of the appraisal management company and changes in regulatory compliance, your valuation options may seem limited. However, there are many alternative valuation products available. 
+
+<!--more-->
+### *The days of a one-size-fits-all solution are in the past.*
 
 Over the years, many things have changed in the real estate industry. That rings true for valuations as well. 
 With the advent of the appraisal management company (AMC) and changes in regulatory compliance, your valuation options may seem limited. However, there are many alternative valuation products available. 
