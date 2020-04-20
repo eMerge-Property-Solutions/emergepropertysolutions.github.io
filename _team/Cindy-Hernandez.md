@@ -1,6 +1,6 @@
 ---
 name: Cindy Hernandez
-title: Fulfillment Specialist
+title: Lead Fulfillment Specialist
 photo: /img/Cindy.jpg
 order: 40
 ---
