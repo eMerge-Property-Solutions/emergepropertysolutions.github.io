@@ -1,6 +1,6 @@
 ---
 name: Danny Walker
-title: Valuations Specialist
+title: Lead Valuations Specialist
 photo: /img/Danny.jpg
 order: 50
 ---
