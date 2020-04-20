@@ -4,8 +4,7 @@ title: "The Emergence of Alternative Valuation Products"
 image: /img/news/Valuation.jpg
 ---
 
-Over the years, many things have changed in the real estate industry. That rings true for valuations as well. 
-With the advent of the appraisal management company and changes in regulatory compliance, your valuation options may seem limited. However, there are many alternative valuation products available. 
+Alternative Valuation Products are on the rise. How and when can they be used? 
 
 <!--more-->
 ### *The days of a one-size-fits-all solution are in the past.*
@@ -39,3 +38,6 @@ Being able to combine repair bids with valuation products has increased the abil
 Other hybrid products that are offered consume the repair bid/property inspection as the means of seeing the property for the purpose of the valuation. This affords users even further reductions in price and allow them to pay only for what they need. 
 Having options for managing your cost, time and portfolio needs is important for creating a competitive edge and getting accurate data for analysis and decision-making. The days of a one-size-fits-all solution are over. To stay ahead of the curve, you must discover different means to achieve the same or better result. Doing so can make all the difference. 
 As times continue to change, your options will continue to evolve as well. Be diligent about reviewing your needs and staying on top of the tools that are available. Challenge the norms to discover what works best for your organization. 
+
+##### By Brandon Winters
+##### CEO, eMerge Property Solutions
