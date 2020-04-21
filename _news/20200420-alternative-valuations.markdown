@@ -4,7 +4,7 @@ title: "The Emergence of Alternative Valuation Products"
 image: /img/news/Valuation.jpg
 ---
 
-Alternative Valuation Products are on the rise. How and when can they be used? Our CEO, Brandon Winters, was recently contributed an article for REI Ink magazine. 
+Alternative Valuation Products are on the rise. How and when can they be used? Our CEO, Brandon Winters, recently contributed an article for REI Ink magazine. 
 
 <!--more-->
 ### *The days of a one-size-fits-all solution are in the past.*
